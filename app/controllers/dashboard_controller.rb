@@ -11,6 +11,7 @@ class DashboardController < ApplicationController
     @statuses = get_statuses
     @projects = get_projects
     @issues = get_issues(@selected_project_id, show_sub_tasks)
+    
   end
 
   def set_issue_status
